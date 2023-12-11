@@ -30,7 +30,7 @@ const HomePage = () => {
             <h1>TicTacToe🕹️</h1>
             <Navigation />
             <Gameboard />
-            <StartGameForm />
+            <StartGameForm startGame={startGame} />
         </>
 
     );
