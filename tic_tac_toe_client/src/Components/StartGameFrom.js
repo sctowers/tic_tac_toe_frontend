@@ -5,27 +5,30 @@ const StartGameForm = ({startGame}) => {
     //FORM handler
     const handleFormSubmit = (event) => {
         event.preventDefault();
+        console.log(stateDifficulty);
+        console.log(stateId);
+        startGame(stateDifficulty,stateId)
+        console.log(startGame(stateDifficulty,stateId));
+        // setStateDifficulty(null);
+        // setStateId(null);
+        
     }
 
     //STATE difficulty handler
     const handleDifficultyChange = (event) => {
         let value = event.target.value
-        console.log(value)
         setStateDifficulty(value);
     }
      //STATE Id handler
      const handleIdChange = (event) => {
         let value = event.target.value
-        console.log(value)
         setStateId(value);
     }
 
     //state for difficulty
     const [stateDifficulty, setStateDifficulty] = useState(null);
     //state for id
-    const [stateId, setStateId] = useState("");
-
-
+    const [stateId, setStateId] = useState(null);
 
 
     return ( 
@@ -39,9 +42,9 @@ const StartGameForm = ({startGame}) => {
             <select 
                 id="difficulty" 
                 name="difficulty"
-                defaultValue=".."
+                // defaultValue=".."
                 onChange={handleDifficultyChange}
-                // value={stateDifficulty}
+                value={stateDifficulty}
                 // onChange={handleChange}
             >
                  <option value="">--</option>
@@ -53,8 +56,8 @@ const StartGameForm = ({startGame}) => {
               <label htmlFor="Id">Pick your player: </label>
             <select 
                 id="Id" 
-                name="difficulty"
-                defaultValue="choose"
+                name="avatar"
+                // defaultValue="choose"
                 value={stateId}
                 onChange={handleIdChange}
                 // onChange={handleChange}
@@ -67,8 +70,6 @@ const StartGameForm = ({startGame}) => {
                 <option value="5">Tic-Tac-Titan</option>
 
             </select>
-
-
 
             <input type="submit" value="Start Game"/>        
         </form>
