@@ -4,6 +4,7 @@ const HomePage = () => {
     return ( 
 
         <>
+        <h1>TicTacToe🕹️</h1>
         <Gameboard />
         <StartGameForm />
         </>
