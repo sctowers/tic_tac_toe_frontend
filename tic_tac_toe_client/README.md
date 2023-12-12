@@ -1,10 +1,10 @@
 # **Group 4: Front for a Tic-Tac-Toe Game**
 
 ## Developer Team ##
-- GitHub: [Emily]
-- GitHub: [Sarah]
-- GitHub: [Susie]
-- GitHub: [Thomas]
+- GitHub: [Emily] (https://github.com/remily23)
+- GitHub: [Sarah] (https://github.com/SarahOgunko)
+- GitHub: [Susie] (https://github.com/sctowers)
+- GitHub: [Thomas] (https://github.com/mclaughlin111)
 
 ## Table of Contents
 
