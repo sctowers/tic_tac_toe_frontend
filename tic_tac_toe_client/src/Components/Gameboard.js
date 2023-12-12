@@ -18,7 +18,7 @@ console.log(mappedCells)
 return (
     <>
     {mappedCells}
-    <GameStatus />
+    <GameStatus game={game} />
     </>
 );
 
