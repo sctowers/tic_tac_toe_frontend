@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { Link, Outlet } from "react-router-dom";
+
 
 
 const StartGameForm = ({startGame}) => {
@@ -14,9 +14,7 @@ const StartGameForm = ({startGame}) => {
         console.log(stateId);
         startGame(stateDifficulty,stateId)
         console.log(startGame(stateDifficulty,stateId));
-        // setStateDifficulty(null);
-        // setStateId(null);
-        navigate("/game");
+        navigate("/gameboard");
         
     }
 
@@ -39,7 +37,7 @@ const StartGameForm = ({startGame}) => {
 
     return ( 
        <>
-        <Outlet />
+      
 
         {/* // Start Game Form */}
         <form id="game-form" onSubmit={handleFormSubmit}>

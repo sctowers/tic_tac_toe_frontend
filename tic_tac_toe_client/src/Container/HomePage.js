@@ -27,15 +27,20 @@ const HomePage = () => {
     const gameRoutes = createBrowserRouter([
         {
             path: "/",
-            element: <StartGameForm startGame={startGame}/>,
+            element: <Navigation/>,
             children: [
                 {
                     path: "/game",
                     element: (
-                        <Gameboard/>
+                        <StartGameForm startGame={startGame}/>
                     ),
-                }
-            ]
+                },
+          
+            {
+                     path:"/gameboard",
+                    element:(<Gameboard />),
+            }
+        ]
         }
 ]);
 
@@ -43,7 +48,7 @@ const HomePage = () => {
         <>
             <h1>TicTacToe🕹️</h1>
             <RouterProvider router={gameRoutes}/>
-            <Navigation />
+           
         </>
 
     );
