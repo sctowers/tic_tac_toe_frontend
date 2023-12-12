@@ -49,7 +49,7 @@ const StartGameForm = ({startGame}) => {
             >
                  <option value="">--</option>
                 <option value="EASY">Easy</option>
-                <option value="DIFFICULT">Difficult</option>
+                <option value="HARD">Hard</option>
             </select>
 
               {/* Select Id (Avatar) */}

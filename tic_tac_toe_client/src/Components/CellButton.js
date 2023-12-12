@@ -1,7 +1,7 @@
 const CellButton = () => {
     return (
 
-        <button></button>
+        <button>Cell</button>
       );
 }
  
