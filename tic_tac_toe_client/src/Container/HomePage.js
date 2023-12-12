@@ -22,9 +22,9 @@ const HomePage = () => {
         setGame(gameWithBoard);
     }
 
-    useEffect(() => {
-        startGame();
-    }, [])
+    // useEffect(() => {
+    //     startGame();
+    // }, [])
 
     const gameRoutes = createBrowserRouter([
         {

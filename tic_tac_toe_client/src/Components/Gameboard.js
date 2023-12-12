@@ -4,15 +4,15 @@ const Gameboard = ({game }) => {
 
     //const gameCells = []
 
-    const cells = (game && game.cell || []);
-    console.log(game)
-    console.log(cells)
+    // const cells = (game && game.cell || []);
+    // console.log(game)
+    // console.log(cells)
 
 
-    const mappedCells = cells.map((cell) => {
-        return <CellButton key={cell.cellNumber} cell={cell}/>
+    // const mappedCells = cells.map((cell) => {
+    //     return <CellButton key={cell.cellNumber} cell={cell}/>
 
-    })
+    // })
 
     return ( 
         <>
