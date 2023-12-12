@@ -26,6 +26,8 @@ const HomePage = () => {
   const onCellClick = async (rowIndex, colIndex, cell) => {
     if (cell === "EMPTY") {
       let position = rowIndex * 3 + colIndex + 1;
+      console.log(position);
+      console.log(game.id);
 
       try {
         const response = await fetch(
@@ -37,7 +39,8 @@ const HomePage = () => {
         }
       );
       const newMove = await response.json();
-      setGame(newMove);
+      setGame((gameState) => ({...gameState, ...newMove,}));
+      console.log(newMove);
         
       } catch (error) {
         console.log(error)
