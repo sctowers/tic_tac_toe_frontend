@@ -3,7 +3,7 @@
 ## Developer Team ##
 - GitHub: [Emily](https://github.com/remily23)
 - GitHub: [Sarah](https://github.com/SarahOgunko)
-- GitHub: [Susie] https://github.com/sctowers)
+- GitHub: [Susie](https://github.com/sctowers)
 - GitHub: [Thomas](https://github.com/mclaughlin111)
 
 ## Table of Contents
