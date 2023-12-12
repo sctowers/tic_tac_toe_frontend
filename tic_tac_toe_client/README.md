@@ -22,14 +22,14 @@
 ## 3.1 Server Side Setup
 1. Clone the project from the Backend [repo](https://github.com/KacperProg/Tic_tac_toe)
 2. Open the project in IntelliJ
-3. Create a database called "Tic_tac_toe_db"
+3. Create a database called `Tic_tac_toe_db`
 
 ## 3.2 Client Side Setup
 1. Clone the project from the Frontend [repo](https://github.com/sctowers/tic_tac_toe_fronend)
 2. Open the project in Visual Studio Code
-3. Enter 'npi i' in the terminal to install the node modules
-4. Enter 'npm install react-router-dom' in the terminal to install the React Router
-5. Start running the app with 'npm start' in the terminal
+3. Enter `npi i` in the terminal to install the node modules
+4. Enter `npm install react-router-dom` in the terminal to install the React Router
+5. Start running the app with `npm start` in the terminal
 
 ## 4. Component & Wireframe Diagrams
 
