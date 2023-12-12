@@ -24,7 +24,7 @@ const StartGameForm = ({startGame}) => {
         setStateDifficulty(value);
     }
      //STATE Id handler
-     const handleIdChange = (event) => {
+    const handleIdChange = (event) => {
         let value = event.target.value
         setStateId(value);
     }
@@ -36,9 +36,8 @@ const StartGameForm = ({startGame}) => {
 
 
     return ( 
-       <>
-      
-
+    <>
+    
         {/* // Start Game Form */}
         <form id="game-form" onSubmit={handleFormSubmit}>
             <h3>Start New Game</h3>
@@ -53,13 +52,13 @@ const StartGameForm = ({startGame}) => {
                 value={stateDifficulty}
                 // onChange={handleChange}
             >
-                 <option value="">--</option>
+                <option value="">--</option>
                 <option value="EASY">Easy</option>
                 <option value="HARD">Hard</option>
             </select>
 
               {/* Select Id (Avatar) */}
-              <label htmlFor="Id">Pick your player: </label>
+            <label htmlFor="Id">Pick your player: </label>
             <select 
                 id="Id" 
                 name="avatar"
@@ -80,7 +79,7 @@ const StartGameForm = ({startGame}) => {
             <input type="submit" value="Start Game"/>        
         </form>
         </>
-     );
+    );
 }
- 
+
 export default StartGameForm;

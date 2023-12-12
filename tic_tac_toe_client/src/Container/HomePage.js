@@ -35,10 +35,9 @@ const HomePage = () => {
                         <StartGameForm startGame={startGame}/>
                     ),
                 },
-          
             {
-                     path:"/gameboard",
-                    element:(<Gameboard />),
+                    path:"/gameboard",
+                    element:(<Gameboard game={game}/>),
             }
         ]
         }
@@ -48,7 +47,7 @@ const HomePage = () => {
         <>
             <h1>TicTacToe🕹️</h1>
             <RouterProvider router={gameRoutes}/>
-           
+        
         </>
 
     );
