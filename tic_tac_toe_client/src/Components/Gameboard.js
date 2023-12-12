@@ -17,7 +17,8 @@ console.log(mappedCells)
 
 return (
     <>
-    {mappedCells}
+    <div className="cells"> {mappedCells}</div>
+   
     <GameStatus game={game} />
     </>
 );

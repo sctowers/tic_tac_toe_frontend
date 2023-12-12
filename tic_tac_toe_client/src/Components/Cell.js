@@ -1,6 +1,6 @@
 const Cell = ({ value, onClick, }) => {
     return ( 
-        <div onClick={onClick}>
+        <div  onClick={onClick}>
             {value}
         </div>
     );
