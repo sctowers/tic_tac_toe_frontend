@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
+import { createBrowserRouter, RouterProvider, Routes } from "react-router-dom";
 import Gameboard from "../Components/Gameboard";
-import StartGameForm from "../Components/StartGameFrom";
+import StartGameForm from "../Components/StartGameForm";
 import Navigation from "../Components/Navigation";
 
 const HomePage = () => {
@@ -10,12 +11,12 @@ const HomePage = () => {
         const response = await fetch("http://localhost:8080/games", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({difficulty, playerId}),
+            body: JSON.stringify({ difficulty, playerId }),
 
         })
         const newGame = await response.json();
         setGame(newGame);
-        
+
         console.log(newGame);
     }
 
@@ -23,14 +24,26 @@ const HomePage = () => {
         startGame("EASY", 1);
     }, [])
 
+    const gameRoutes = createBrowserRouter([
+        {
+            path: "/",
+            element: <StartGameForm startGame={startGame}/>,
+            children: [
+                {
+                    path: "/game",
+                    element: (
+                        <Gameboard/>
+                    ),
+                }
+            ]
+        }
+]);
 
-    
     return (
         <>
             <h1>TicTacToe🕹️</h1>
+            <RouterProvider router={gameRoutes}/>
             <Navigation />
-            <Gameboard />
-            <StartGameForm startGame={startGame} />
         </>
 
     );
