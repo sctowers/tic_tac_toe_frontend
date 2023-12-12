@@ -1,25 +1,25 @@
-import CellButton from "./CellButton";
+import Cell from "./Cell";
 import GameStatus from "./GameStatus";
-const Gameboard = ({game }) => {
+const Gameboard = ({ game, onCellClick }) => {
 
-    //const gameCells = []
+    const mappedCells = game.board.flatMap((row, rowIndex) => row.map((cell, colIndex) => (
+    <Cell
+        key={rowIndex * game.board.length + colIndex}
+        value={cell}
+        onClick={() => onCellClick(rowIndex, colIndex, cell)}
+    />
+    
+    ))
+);
+console.log(mappedCells)
 
-    const cells = (game && game.cell || []);
-    console.log(game)
-    console.log(cells)
+return (
+    <>
+    {mappedCells}
+    <GameStatus />
+    </>
+);
 
-
-    const mappedCells = cells.map((cell) => {
-        return <CellButton key={cell.cellNumber} cell={cell}/>
-
-    })
-
-    return ( 
-        <>
-        {mappedCells}
-        <GameStatus />
-        </>
-    );
 }
 
 export default Gameboard;

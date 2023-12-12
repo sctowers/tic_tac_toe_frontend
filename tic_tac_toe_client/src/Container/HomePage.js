@@ -5,8 +5,8 @@ import StartGameForm from "../Components/StartGameForm";
 import Navigation from "../Components/Navigation";
 
 const HomePage = () => {
-    const [game, setGame] = useState([]);
-
+    const [game, setGame] = useState({ board: [] });
+    
     const startGame = async (difficulty, playerId) => {
         const response = await fetch("http://localhost:8080/games", {
             method: "POST",
