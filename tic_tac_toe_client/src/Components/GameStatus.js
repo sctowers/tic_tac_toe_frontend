@@ -1,6 +1,6 @@
 const GameStatus = ({game}) => {
     return ( 
-        <p>{game.result}</p>
+        <p id="gameResult">Game Result: {game.result}</p>
      );
 }
  

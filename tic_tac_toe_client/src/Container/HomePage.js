@@ -3,6 +3,7 @@ import { createBrowserRouter, RouterProvider, Routes } from "react-router-dom";
 import Gameboard from "../Components/Gameboard";
 import StartGameForm from "../Components/StartGameForm";
 import Navigation from "../Components/Navigation";
+import GameSound from "../Components/GameSound";
 
 const HomePage = () => {
   const [game, setGame] = useState({ board: [] });
@@ -71,6 +72,7 @@ const HomePage = () => {
       <h1>TicTacToe🕹️</h1>
       <hr></hr>
       <RouterProvider router={gameRoutes} />
+      <GameSound />
     </>
   );
 };
