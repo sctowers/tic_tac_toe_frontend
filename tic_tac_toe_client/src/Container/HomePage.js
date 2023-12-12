@@ -15,13 +15,15 @@ const HomePage = () => {
 
         })
         const newGame = await response.json();
-        setGame(newGame);
 
-        console.log(newGame);
+        const gameStateResponse = await fetch(`http://localhost:8080/games/game-state/${newGame.id}`)
+        const gameWithBoard = await gameStateResponse.json();
+
+        setGame(gameWithBoard);
     }
 
     useEffect(() => {
-        startGame("EASY", 1);
+        startGame();
     }, [])
 
     const gameRoutes = createBrowserRouter([
