@@ -2,7 +2,6 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 
-
 const StartGameForm = ({startGame}) => {
 
     const navigate = useNavigate();
@@ -42,7 +41,7 @@ const StartGameForm = ({startGame}) => {
             <h3>Start New Game</h3>
 
             {/* Select Difficulty */}
-            <label htmlFor="difficulty">Difficulty: </label>
+            <label id="difficulty-label" htmlFor="difficulty">Difficulty: </label>
             <select 
                 id="difficulty" 
                 name="difficulty"
@@ -57,9 +56,9 @@ const StartGameForm = ({startGame}) => {
             </select>
 
               {/* Select Id (Avatar) */}
-            <label htmlFor="Id">Pick your player: </label>
+            <label id="player-label"htmlFor="Id">Pick your player: </label>
             <select 
-                id="Id" 
+                id="player" 
                 name="avatar"
                 // defaultValue="choose"
                 value={stateId}
@@ -68,14 +67,14 @@ const StartGameForm = ({startGame}) => {
             >
                 <option value="">--</option>
                 <option value="1">Zsolt</option>
-                <option value="2">Naught Ninja</option>
-                <option value="3">Grid Gladiator</option>
-                <option value="4">Square Sensei</option>
-                <option value="5">Tic-Tac-Titan</option>
+                <option value="2">Saima</option>
+                <option value="3">Emmanuel</option>
+                <option value="4">Gisele</option>
+                <option value="5">Kacper</option>
 
             </select>
 
-            <input type="submit" value="Start Game"/>        
+            <input id ="submit-form"type="submit" value="Start Game"/>        
         </form>
         </>
     );

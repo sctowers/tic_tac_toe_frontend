@@ -3,7 +3,7 @@ const Navigation = () => {
     return (  
 
         <>
-        <Link to = "/game">Start new game </Link>
+        <Link id="linkToForm" to = "/game">Start new game </Link>
         <Outlet />
         </>
 
