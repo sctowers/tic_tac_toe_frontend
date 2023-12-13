@@ -50,8 +50,3 @@ h1 {
   background-color: #385170;
   color: #faf5e4;
 }
-
-body {
-  transition-duration: 250;
-  transition-timing-function: ease-in-out;
-}
