@@ -14,32 +14,35 @@
 .fourth-color { 
 	background: #142d4c; 
 } */
-#root{
-  /* display: flex; */
-  /* margin-bottom: 0px; */
-}
+
 body {
-  margin: 1em;
+  /* margin: 1em; */
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #9fd3c7;
 }
 
 #linkToForm {
   display: flex;
   justify-content: center;
-  border: 3px solid #faf5e4;
-  margin-left: 1px;
-  margin-right: 1px;
-  margin-bottom: 15px;
-  margin-top: 15px;
   text-decoration: none;
+  margin-right: 400px;
+  margin-left: 400px;
+  padding: 20px;
+  font-weight: bolder;
+  font-size: large;
+  margin-bottom: 125px;
+  border:  5px solid #385170;
+  border-radius: 25px;
+  margin-top: 10px;
+  background-color: #faf5e4;
 }
 
 #linkToForm:visited {
-color : #385170 ;
+color : #101821 ;
 }
 
 
@@ -54,6 +57,13 @@ h1 {
   transition: background-size 250ms;
   transition-timing-function: ease-in-out;
   
+}
+h3 {
+  display: flex;
+  justify-content: center;
+  transition: background-size 250ms;
+  transition-timing-function: ease-in-out;
+
 }
 
 /* Header Animation */
@@ -85,17 +95,13 @@ h1 {
 
 .cells {
   display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    align-items: center;
-    justify-content: center;
-    align-content: center;
-
-
-    /* margin-right: 550px;
-    margin-left: 550px; */
-    
-    background-color: #ececec;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  align-items: center;
+  justify-content: start;
+  align-content: space-between;
+  background-color: #ececec;
+  justify-items: center;
 }
 
 .cells:hover {
@@ -109,15 +115,17 @@ h1 {
 }
 
 /* Light Mode styles */
-.light-mode {
-  transition:0.3s;
+.light-mode, #root {
+  transition:0.9s;
+  animation-timing-function: ease-in-out;
   background-color: #9fd3c7;
   color: #385170;
 }
 
 /* Dark mode styles */
 .dark-mode {
-  transition:0.3s;
+  transition:0.9s;
+  animation-timing-function: ease-in-out;
   background-color: #385170;
   color: #faf5e4
 }
@@ -128,12 +136,6 @@ h1 {
   align-items: center;
   text-align: center;
   color: #385170;
-  border: 3px solid #faf5e4;
-  padding: 20px;
-  box-shadow: #385170;
-  padding-right: 0;
-
-  
 }
 
 #difficulty{
@@ -159,8 +161,18 @@ h1 {
   font-weight: bold;
   color:#385170 ;
   background-color: #faf5e4;
-  border-radius: 10px;
-  margin-bottom: 10px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+ 
+}
+
+#whole-form-div{
+border:  5px solid #385170;
+margin-right: 600px;
+margin-left: 600px;
+padding: 20px;
+border-radius: 10px;
+background-color:#faf5e4; ;
 }
 
 #submit-form:hover{
@@ -169,12 +181,18 @@ h1 {
   color:#faf5e4 ;
 }
 
+select{
+  font-size: medium;
+}
+
 #difficulty-label{
   font-weight: bold;
+  margin-bottom: 20px;
 }
 
 #player-label{
   font-weight: bold;
+  margin-bottom: 20px;
 }
   
 button {
@@ -188,4 +206,32 @@ button {
   font-size: 16px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
+.dark-mode-toggle {
+  display: flex;
+  justify-content: center;
+}
+#darkModeButton {
+  font-size: 2em;
+  transition-duration: 250ms;
+  transition-timing-function: ease-in-out;
+}
+#darkModeButton:hover {
+
+  font-size: 2.1em;
+}
+#dardModeCheckbox {
+  display: none;
+}
+
+#headingBottomBorder {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  height: 2.5px;
+  border-radius: 5px;
+  margin: 1vw;
+}
+
+
 

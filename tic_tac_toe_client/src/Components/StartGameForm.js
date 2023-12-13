@@ -35,7 +35,7 @@ const StartGameForm = ({startGame}) => {
 
 
     return ( 
-    <>
+    <div id="whole-form-div">
         {/* // Start Game Form */}
         <form id="game-form" onSubmit={handleFormSubmit}>
             <h3>Start New Game</h3>
@@ -76,7 +76,7 @@ const StartGameForm = ({startGame}) => {
 
             <input id ="submit-form"type="submit" value="Start Game"/>        
         </form>
-        </>
+        </div>
     );
 }
 

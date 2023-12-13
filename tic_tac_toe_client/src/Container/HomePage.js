@@ -66,7 +66,12 @@ const HomePage = () => {
   const gameRoutes = createBrowserRouter([
     {
       path: "/",
-      element: <Navigation />,
+      element: (
+                <>
+                <Navigation />
+                {/* <GameSound /> */}
+                </>
+      ),
       children: [
         {
           path: "/game",
@@ -78,11 +83,14 @@ const HomePage = () => {
         },
       ],
     },
-  ]);
+  ])
 
   // function to toggle dark mode
   const toggleDarkMode = () => {
     setDarkMode(!darkMode)
+    let face = document.getElementById("darkModeButton")
+    face.innerText === '🌝' ?  face.innerText = '🌚' : face.innerText = '🌝'
+
   }
 
   // function to show/hide leaderboard
@@ -92,25 +100,29 @@ const HomePage = () => {
 
   return (
     <div className={`container ${darkMode ? 'dark-mode' : 'light-mode'}`}>
+        <h3>welcome to:</h3>
       <h1><span id="animate">TicTacToe🕹️</span></h1>
-      <hr></hr>
+      <div id='headingBottomBorder'></div>
+
+      <button onClick={toggleLeaderboard}>
+        {showLeaderboard ? 'Hide Leaderboard' : 'Show Leaderboard'}
+      </button>
+      <button onClick={updateLeaderboard}>Update Leaderboard</button>
+      {showLeaderboard && <Leaderboard players={leaderboard}/>}
       <RouterProvider router={gameRoutes} />
+     
+      
       <div className='dark-mode-toggle'>
                     <label>
-                        Dark Mode: 🌚
-                        <input
+                        <span id="darkModeButton">🌝</span>
+                        <input id="dardModeCheckbox"
                             type='checkbox'
                             checked={darkMode}
                             onChange={toggleDarkMode}
                         />
                     </label>
                 </div>
-      <GameSound />
-      <button onClick={toggleLeaderboard}>
-        {showLeaderboard ? 'Hide Leaderboard' : 'Show Leaderboard'}
-      </button>
-      <button onClick={updateLeaderboard}>Update Leaderboard</button>
-      {showLeaderboard && <Leaderboard players={leaderboard}/>}
+      
     </div>
   );
 };
