@@ -9,38 +9,35 @@ const GameSound = (
     handleSongPlaying,
     handleSongFinishedPlaying
     ) => {
-        const[isPlaying, setIsPlaying] = useState(false);
-        const[volume, setVolume] = useState(50);
+
+        const[volume, setVolume] = useState(0);
+        // const[position, setPosition] = useState(1000);
 
         function mute(){
-            if (volume === 50) {
-                setVolume(0);
-            }
-            else {
+            if (volume === 0) {
                 setVolume(50);
             }
-           
+            else {
+                setVolume(0);
+            }
+
+            let button = document.getElementById("muteButton")
+    button.innerText === '🔇' ?  button.innerText = '🔈' : button.innerText = '🔇'
         }
-        // const[playPosition, setPlayPosition] = useState();
-        let position = 0;
+    
+        
     return (
         <div>
-            
-            <button onClick={() => setIsPlaying(!isPlaying)}>{!isPlaying ? 'Play' : 'Stop'}   {/* //think like IF ElSE Tom */}
-          
-            </button>
-           <button onClick={mute}>
-            Mute
-            </button>
-           
 
+            {/* <button onClick={() => setIsPlaying(!isPlaying)}>{!isPlaying ? 'Play' : 'Stop'}   {/* //think like IF ElSE Tom */}
+            {/* </button> */} 
+           <button id='muteButton' onClick={mute}>🔇</button>  
             <Sound
                 url={Music}
-                playStatus={isPlaying ? Sound.status.PLAYING : Sound.status.STOPPED}
-                playFromPosition={position}
-              
-                loop={true}
-                volume={volume}
+                // playStatus={Sound.status.PLAYING}
+                playFromPosition={400} 
+                // loop={true}
+                volume={volume} 
             />
         </div>
 

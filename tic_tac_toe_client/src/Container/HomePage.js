@@ -5,6 +5,7 @@ import StartGameForm from "../Components/StartGameForm";
 import Navigation from "../Components/Navigation";
 import GameSound from "../Components/GameSound";
 import Leaderboard from "../Components/Leaderboard";
+import Footer from "../Components/Footer";
 
 const HomePage = () => {
   const [game, setGame] = useState({ board: [] });
@@ -67,9 +68,9 @@ const HomePage = () => {
     {
       path: "/",
       element: (
-                <>
+          <>
                 <Navigation />
-                {/* <GameSound /> */}
+                
                 </>
       ),
       children: [
@@ -103,16 +104,17 @@ const HomePage = () => {
         <h3>welcome to:</h3>
       <h1><span id="animate">TicTacToe🕹️</span></h1>
       <div id='headingBottomBorder'></div>
-
+      <RouterProvider router={gameRoutes} />
+     
+      
+     
       <button onClick={toggleLeaderboard}>
         {showLeaderboard ? 'Hide Leaderboard' : 'Show Leaderboard'}
       </button>
       <button onClick={updateLeaderboard}>Update Leaderboard</button>
       {showLeaderboard && <Leaderboard players={leaderboard}/>}
-      <RouterProvider router={gameRoutes} />
-     
-      
-      <div className='dark-mode-toggle'>
+      <footer> 
+        <div className='dark-mode-toggle'>
                     <label>
                         <span id="darkModeButton">🌝</span>
                         <input id="dardModeCheckbox"
@@ -122,8 +124,10 @@ const HomePage = () => {
                         />
                     </label>
                 </div>
-      
+                <GameSound />
+                </footer>
     </div>
+    
   );
 };
 
