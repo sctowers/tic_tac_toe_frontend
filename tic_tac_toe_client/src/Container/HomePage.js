@@ -7,7 +7,7 @@ import GameSound from "../Components/GameSound";
 
 const HomePage = () => {
   const [game, setGame] = useState({ board: [] });
-//   const [move, setMove] = useState({ board: [] });
+  const [darkMode, setDarkMode] = useState(false)
 
   const startGame = async (difficulty, playerId) => {
     const response = await fetch("http://localhost:8080/games", {
@@ -67,13 +67,28 @@ const HomePage = () => {
     },
   ]);
 
+  // function to toggle dark mode
+  const toggleDarkMode = () => {
+    setDarkMode(!darkMode)
+  }
+
   return (
-    <>
+    <div className={`container ${darkMode ? 'dark-mode' : 'light-mode'}`}>
       <h1>TicTacToe🕹️</h1>
       <hr></hr>
       <RouterProvider router={gameRoutes} />
+      <div className='dark-mode-toggle'>
+                    <label>
+                        Dark Mode: 🌚
+                        <input
+                            type='checkbox'
+                            checked={darkMode}
+                            onChange={toggleDarkMode}
+                        />
+                    </label>
+                </div>
       <GameSound />
-    </>
+    </div>
   );
 };
 

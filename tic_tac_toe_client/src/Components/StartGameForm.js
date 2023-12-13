@@ -37,7 +37,6 @@ const StartGameForm = ({startGame}) => {
 
     return ( 
     <>
-    
         {/* // Start Game Form */}
         <form id="game-form" onSubmit={handleFormSubmit}>
             <h3>Start New Game</h3>

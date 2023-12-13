@@ -8,7 +8,7 @@ body {
 }
 
 .EMPTY {
-  opacity: 0;
+  opacity: 0.5;
 }
 
 code {
@@ -25,6 +25,7 @@ h1 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
+  gap: 50px;
 
   align-items: stretch;
   justify-items: center;
@@ -36,4 +37,21 @@ h1 {
 #gameResult {
   display: flex;
   justify-content: center;
+}
+
+/* Light Mode styles */
+.light-mode {
+  background-color: #9fd3c7;
+  color: #385170;
+}
+
+/* Dark mode styles */
+.dark-mode {
+  background-color: #385170;
+  color: #faf5e4;
+}
+
+body {
+  transition-duration: 250;
+  transition-timing-function: ease-in-out;
 }
