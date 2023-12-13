@@ -1,7 +1,13 @@
+import { Link, Outlet } from "react-router-dom";
 const Navigation = () => {
     return (  
 
-        <p>navigation</p>
+        <>
+        <Link to = "/game">Start new game </Link>
+        <Outlet />
+        </>
+
+        
     );
 }
  

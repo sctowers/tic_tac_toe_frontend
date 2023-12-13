@@ -11,3 +11,25 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+h1 {
+  display: flex;
+  justify-content: center;
+}
+
+.cells {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+
+  align-items: stretch;
+  justify-items: center;
+  justify-content: center;
+  align-content: center;
+}
+
+
+#gameResult {
+  display: flex;
+  justify-content: center;
+}

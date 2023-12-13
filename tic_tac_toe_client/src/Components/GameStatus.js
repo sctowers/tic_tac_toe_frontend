@@ -1,6 +1,6 @@
-const GameStatus = () => {
+const GameStatus = ({game}) => {
     return ( 
-        <p>game status</p>
+        <p id="gameResult">Game Result: {game.result}</p>
      );
 }
  
