@@ -88,23 +88,26 @@ h3 {
 
 /* GameBoard Style */
 .EMPTY, .X, .O {
-  display: box;
+  display: flex;
   font-size: 3em;
   border-style: solid;
-  border-radius: 10px;
-  border-color:#faf5e4;
-  background-color:#9fd3c7;
+  border-radius: 41px;
+  border-color: #faf5e4;
+  background-color: #9fd3c7;
   background-color: #faf5e4;
   /* border: 50px; */
-   padding: 70px;
-  margin: 10px;   
-  border: 5px solid #385170;
-  margin-left: 50px ;
-  margin-right: 50px;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  /* padding: 70px; */
+  margin: 13px;
+  /* border: 5px solid #385170; */
+  /* margin-left: 50px; */
+  /* margin-right: 50px; */
+  /* margin-top: 50px; */
+  /* margin-bottom: 50px; */
+  align-content: center;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: nowrap;
 }
-
 .EMPTY{
 
   color: rgba(0, 0, 0, 0);
@@ -112,16 +115,16 @@ h3 {
 
 .cells {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  align-items: center;
-  justify-content: start;
-  align-content: space-between;
-  background-color: #9fd3c7;
-  justify-items: center;
-  border: 10px solid #385170;
-  margin-right: 100px;
-  margin-left: 100px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    align-items: center;
+    justify-content: start;
+    align-content: space-between;
+    background-color: #9fd3c7;
+    justify-items: center;
+    border: 10px solid #385170;
+    margin-right: 100px;
+    margin-left: 100px;
 
 }
 
