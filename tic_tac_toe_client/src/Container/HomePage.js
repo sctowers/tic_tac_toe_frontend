@@ -1,5 +1,5 @@
-import { useState, useEffect } from "react";
-import { createBrowserRouter, RouterProvider, Routes } from "react-router-dom";
+import { useState } from "react";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Gameboard from "../Components/Gameboard";
 import StartGameForm from "../Components/StartGameForm";
 import Navigation from "../Components/Navigation";
@@ -40,7 +40,7 @@ const HomePage = () => {
         }
       );
       const newMove = await response.json();
-      setGame((gameState) => ({...gameState, ...newMove,}));
+      setGame((gameState) => ({...gameState, ...newMove,})) 
       console.log(newMove);
         
       } catch (error) {
