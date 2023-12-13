@@ -26,7 +26,8 @@ const GameSound = (
     return (
         <div>
             
-            <button onClick={() => setIsPlaying(!isPlaying)}>{!isPlaying ? 'Play' : 'Stop'}
+            <button onClick={() => setIsPlaying(!isPlaying)}>{!isPlaying ? 'Play' : 'Stop'}   {/* //think like IF ElSE Tom */}
+          
             </button>
            <button onClick={mute}>
             Mute
