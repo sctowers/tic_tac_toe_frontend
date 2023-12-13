@@ -45,12 +45,12 @@ const StartGameForm = ({startGame}) => {
             <select 
                 id="difficulty" 
                 name="difficulty"
-                // defaultValue=".."
+                defaultValue="Pick-your-difficulty"
                 onChange={handleDifficultyChange}
                 value={stateDifficulty}
                 // onChange={handleChange}
             >
-                <option value="">--</option>
+                <option disabled value="Pick-your-difficulty">--</option>
                 <option value="EASY">Easy</option>
                 <option value="HARD">Hard</option>
             </select>
@@ -60,12 +60,12 @@ const StartGameForm = ({startGame}) => {
             <select 
                 id="player" 
                 name="avatar"
-                // defaultValue="choose"
+                defaultValue="pick-player"
                 value={stateId}
                 onChange={handleIdChange}
                 // onChange={handleChange}
             >
-                <option value="">--</option>
+                <option disabled value="pick-player" >--</option>
                 <option value="1">Zsolt</option>
                 <option value="2">Saima</option>
                 <option value="3">Emmanuel</option>

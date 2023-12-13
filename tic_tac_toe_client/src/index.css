@@ -14,7 +14,10 @@
 .fourth-color { 
 	background: #142d4c; 
 } */
-
+#root{
+  /* display: flex; */
+  /* margin-bottom: 0px; */
+}
 body {
   margin: 1em;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -73,7 +76,7 @@ h1 {
 .EMPTY, .X, .O {
   border-style: solid;
   border-radius: 5px;
-  border-color: #385170;
+  border-color: white;
   background-color:#9fd3c7;
   border: 10px;
   padding: 10px;
@@ -85,13 +88,12 @@ h1 {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
     align-items: center;
-    justify-items: center;
     justify-content: center;
     align-content: center;
 
 
-    margin-right: 550px;
-    margin-left: 550px;
+    /* margin-right: 550px;
+    margin-left: 550px; */
     
     background-color: #ececec;
 }
@@ -117,7 +119,7 @@ h1 {
 .dark-mode {
   transition:0.3s;
   background-color: #385170;
-  color: #faf5e4;
+  color: #faf5e4
 }
 
 #game-form{
@@ -127,10 +129,11 @@ h1 {
   text-align: center;
   color: #385170;
   border: 3px solid #faf5e4;
-  margin-top: 25px;
-  margin-right: 2px;
-  margin-left: 2px;
-  padding-bottom: 5px;
+  padding: 20px;
+  box-shadow: #385170;
+  padding-right: 0;
+
+  
 }
 
 #difficulty{
@@ -157,6 +160,7 @@ h1 {
   color:#385170 ;
   background-color: #faf5e4;
   border-radius: 10px;
+  margin-bottom: 10px;
 }
 
 #submit-form:hover{
@@ -173,5 +177,15 @@ h1 {
   font-weight: bold;
 }
   
-
+button {
+  background-color: #385170;
+  color: #faf5e4;
+  border: none;
+  padding: 4px 8px;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 16px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 
