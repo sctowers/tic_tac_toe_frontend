@@ -1,70 +1,86 @@
-# Getting Started with Create React App
+# **Group 4: Front for a Tic-Tac-Toe Game** 🎮
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 👥🎸 The Tic Tac Titans Developer Team 👥🎸 ##
+- GitHub: [Emily](https://github.com/remily23) 🐼
+- GitHub: [Sarah](https://github.com/SarahOgunko) 
+- GitHub: [Suzi](https://github.com/sctowers) 
+- GitHub: [Tom](https://github.com/mclaughlin111) 💿
 
-## Available Scripts
+## Table of Contents 📜
+1. Introduction
+2. Technologies & Libraries
+3. Setup Instructions
+   - 3.1. Server Side Setup
+   - 3.2. Client Side Setup
+4. Component & Wireframe Diagrams
+   - 4.1. Initial Diagrams
+   - 4.2. Final Diagrams
+5. Game Functionality
+   - 5.1. MVPs
+   - 5.2. Extensions
 
-In the project directory, you can run:
+## 1. Introduction
+Welcome to our exciting world of Tic-Tac-Toe! 🎉 In collaboration with the Superstars team, we've crafted a fantastic frontend web application that brings the classic game to life. Get ready to experience the thrill of strategic moves and friendly competition!
 
-### `npm start`
+## 2. Technologies & Libraries
+- [Tic-Tac-Toe Game API](https://github.com/KacperProg/Tic_tac_toe)
+- JavaScript
+- HTML
+- CSS
+- React
+  - [Router Dom 6.21.0](https://www.npmjs.com/package/react-router-dom)
+  - [Sound 1.2.0](https://www.npmjs.com/package/react-sound)
+  - [Confetti 6.1.0](https://www.npmjs.com/package/react-confetti)
+- Visual Studio Code
+- GitHub
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 3. Setup Instructions 🛠️
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 3.1 Server Side Setup
+1. Clone the project from the [Backend repo](https://github.com/KacperProg/Tic_tac_toe)
+2. Open the project in IntelliJ
+3. Create a database called `Tic_tac_toe_db`
+4. Run the application in IntelliJ
 
-### `npm test`
+## 3.2 Client Side Setup
+1. Clone the project from the [Frontend repo](https://github.com/sctowers/tic_tac_toe_fronend)
+2. Open the project in Visual Studio Code
+3. Enter `npi i` in the terminal to install the node modules
+4. Enter `npm install react-router-dom` in the terminal to install the React Router
+5. Start running the app with `npm start` in the terminal
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 4. Component & Wireframe Diagrams 🎨
+Our following diagrams illustrate the changes we made over the course of receiving feedback from the trainers, and developing the frontend.
 
-### `npm run build`
+## 4.1 Initial Diagrams
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+**Component Diagram:**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![initial component diagram](https://github.com/sctowers/tic_tac_toe_frontend/blob/ReadMe/tic_tac_toe_client/Initial%20Component%20Diagram.png?raw=true)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+**Wireframe Diagram:**
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+![initial wireframe diagram](https://github.com/sctowers/tic_tac_toe_frontend/blob/ReadMe/tic_tac_toe_client/Initial%20Wireframe%20Diagram.png?raw=true)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 4.2 Final Diagrams:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+**Component Diagram:**
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+![final component diagram](https://github.com/sctowers/tic_tac_toe_frontend/blob/ReadMe/tic_tac_toe_client/Final%20Component%20Diagram.png?raw=true)
 
-## Learn More
+**Wireframe Diagram:**
+![final wireframe diagram](https://github.com/sctowers/tic_tac_toe_frontend/blob/ReadMe/tic_tac_toe_client/Final%20Wireframe%20Diagram.png?raw=true)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 5. Game Functionality 🕹️
 
-### Code Splitting
+## 5.1. MVP 
+-  [X] When player clicks on cell, the game state updates
+-  [X] Win/lose status check after each move
+- [X] Update player stats on leaderboard
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 5.2. Extensions
+- [X] Add sound (app music + effects depending on game outcome win/lose)
+- [X] Light and dark mode functionality
+- [X] Add animation
