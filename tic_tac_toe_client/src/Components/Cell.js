@@ -1,6 +1,8 @@
 const Cell = ({ value, onClick, }) => {
+
+    let valueName = Array.from(value)[0];
     return ( 
-        <div className={value} onClick={onClick}>
+        <div className={valueName} onClick={onClick}>
             {value}
         </div>
     );
