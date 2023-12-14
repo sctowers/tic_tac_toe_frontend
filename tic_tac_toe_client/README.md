@@ -61,7 +61,7 @@ Our following diagrams illustrate the changes we made over the course of receivi
 
 **Wireframe Diagram:**
 
-![initial wireframe diagram](https://github.com/sctowers/tic_tac_toe_frontend/blob/ReadMe/tic_tac_toe_client/Initial%20Wireframe%20Diagram.png?raw=true)
+![initial wireframe diagram]()
 
 ## 4.2 Final Diagrams:
 
@@ -70,6 +70,7 @@ Our following diagrams illustrate the changes we made over the course of receivi
 ![final component diagram](https://github.com/sctowers/tic_tac_toe_frontend/blob/ReadMe/tic_tac_toe_client/Final%20Component%20Diagram.png?raw=true)
 
 **Wireframe Diagram:**
+![final wireframe diagram](https://github.com/sctowers/tic_tac_toe_frontend/blob/ReadMe/tic_tac_toe_client/Final%20Wireframe%20Diagram.png?raw=true)
 
 
 ## 5. Game Functionality 🕹️
