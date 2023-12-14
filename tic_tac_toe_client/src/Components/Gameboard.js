@@ -17,9 +17,11 @@ console.log(mappedCells)
 
 return (
     <>
+    <div className="cellWrapper">
     <div className="cells"> {mappedCells}</div>
-   
+    </div>
     <GameStatus game={game} />
+    
     </>
 );
 

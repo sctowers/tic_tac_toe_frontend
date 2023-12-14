@@ -101,7 +101,7 @@ const HomePage = () => {
 
   return (
     <div className={`container ${darkMode ? 'dark-mode' : 'light-mode'}`}>
-        <h3>welcome to:</h3>
+        {/* <h3>welcome to:</h3> */}
       <h1><span id="animate">TicTacToe🕹️</span></h1>
       <div id='headingBottomBorder'></div>
       <RouterProvider router={gameRoutes} />

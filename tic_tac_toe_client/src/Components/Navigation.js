@@ -4,9 +4,9 @@ const Navigation = () => {
     return (  
 
         <>
-        
+        <div className="navigationContainer">
         <Link id="linkToForm" to = "/game">Click here to start a new game </Link>
-       
+        </div>
         <Outlet />
         </>
 
