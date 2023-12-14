@@ -1,7 +1,7 @@
 # **Group 4: Front for a Tic-Tac-Toe Game** 🎮
 
 ## 👥🎸 The Tic Tac Titans Developer Team 👥🎸 ##
-- GitHub: [Emily](https://github.com/remily23) 
+- GitHub: [Emily](https://github.com/remily23) 🐼
 - GitHub: [Sarah](https://github.com/SarahOgunko) 
 - GitHub: [Suzi](https://github.com/sctowers) 
 - GitHub: [Tom](https://github.com/mclaughlin111) 💿
