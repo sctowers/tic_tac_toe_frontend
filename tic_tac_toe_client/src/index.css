@@ -45,12 +45,13 @@ body {
   font-weight: bolder;
   font-size: 1em;
   margin-bottom: 22px;
-  /* border: 2px solid #385170; */
+  border: 2px solid #385170;
   border-radius: 50px;
   margin-top: 10px;
   background-color: #faf5e4;
   transition-duration: 250ms;
   transition-timing-function: ease-in-out;
+  text-decoration: none;
 }
 #linkToForm:hover {
   scale: 1.03;
@@ -78,6 +79,7 @@ h1 {
   justify-content: center;
   transition: background-size 250ms;
   transition-timing-function: ease-in-out;
+  font-size: 100px;
   
 }
 h3 {
@@ -288,15 +290,15 @@ footer {
 
 /* leaderboard */
 .leaderboardTable {
-  background-color: #9fd3c7;
+  background-color: #faf5e4;
   color: #142d4c;
   border: none;
-  padding: 4px 8px;
+  padding: 8px 16px;
   margin: 5px;
   cursor: pointer;
   border-radius: 4px;
-  width: 50%;
-  font-size: 16px;
+  width: 70%;
+  font-size: 20px;
   margin: 15px auto;
   border-collapse: collapse;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -304,15 +306,23 @@ footer {
 
 .leaderboardTable th, .leaderboardTable td {
   border: 1px solid #142d4c; 
-  padding: 8px; 
+  padding: 12px; 
+  text-align: center;
 }
 
 .leaderboardTitle {
-  background-color: #9fd3c7;
+  background-color: #faf5e4;
   color: #142d4c;
   width: 20%;
   text-align: center;
   border-radius: 4px;
   margin: auto;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border: 2px solid #385170;
+}
+
+.copyright {
+  font-size: large;
+  font-weight: bold;
+  text-align: center;
 }
