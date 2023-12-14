@@ -1,15 +1,15 @@
-# **Group 4: Front for a Tic-Tac-Toe Game**
+# **Group 4: Front for a Tic-Tac-Toe Game** 🎮
 
 ## Developer Team ##
-- GitHub: [Emily](https://github.com/remily23)
-- GitHub: [Sarah](https://github.com/SarahOgunko)
-- GitHub: [Susie](https://github.com/sctowers)
-- GitHub: [Thomas](https://github.com/mclaughlin111)
+- GitHub: [Emily](https://github.com/remily23) 
+- GitHub: [Sarah](https://github.com/SarahOgunko) 
+- GitHub: [Suzi](https://github.com/sctowers) 
+- GitHub: [Tom](https://github.com/mclaughlin111) 💿
 
-## Table of Contents
+## Table of Contents 📜
 
 ## 1. Introduction
-Based on the Tic-Tac-Toe API created by the Superstars team, we wanted to create a functional frontend web application to allow users to interact with an accessible interface and play a game.
+Welcome to our exciting world of Tic-Tac-Toe! 🎉 In collaboration with the Superstars team, we've crafted a fantastic frontend web application that brings the classic game to life. Get ready to experience the thrill of strategic moves and friendly competition!
 
 ## 2. Technologies & Libraries
 - [Tic-Tac-Toe Game API](https://github.com/KacperProg/Tic_tac_toe)
@@ -21,7 +21,7 @@ Based on the Tic-Tac-Toe API created by the Superstars team, we wanted to create
 - Visual Studio Code
 - GitHub
 
-## 3. Setup Instructions
+## 3. Setup Instructions 🛠️
 
 ## 3.1 Server Side Setup
 1. Clone the project from the [Backend repo](https://github.com/KacperProg/Tic_tac_toe)
@@ -36,10 +36,10 @@ Based on the Tic-Tac-Toe API created by the Superstars team, we wanted to create
 4. Enter `npm install react-router-dom` in the terminal to install the React Router
 5. Start running the app with `npm start` in the terminal
 
-## 4. Component & Wireframe Diagrams
+## 4. Component & Wireframe Diagrams 🎨
 TBA
 
-## 5. Game Functionality
+## 5. Game Functionality 🕹️
 
 ## 5.1. MVP 
 -  [] When player clicks on cell, the game state updates
