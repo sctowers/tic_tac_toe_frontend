@@ -45,7 +45,7 @@ body {
   font-weight: bolder;
   font-size: 1em;
   margin-bottom: 22px;
-  /* border: 2px solid #385170; */
+  border: 2px solid #385170;
   border-radius: 50px;
   margin-top: 10px;
   background-color: #faf5e4;
@@ -105,32 +105,23 @@ h3 {
 }
 
 /* GameBoard Style */
-.E, .X, .O {
-  scale: 1.0;
-  transition:0.35s;
-  animation-timing-function: ease-in-out;
+.EMPTY, .X, .O {
   display: flex;
-  align-content: center;
-  align-items: center;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: nowrap;
-    contain: content;
     font-size: 2.5em;
+    border-style: solid;
     border-radius: 5px;
     background-color: #faf5e4;
     border: 41px;
-    /* padding: 35px; */
+    padding: 35px;
     margin: 1.5px;
-    min-height: 80px;
-    min-width: 80px;
-    
+  
+    align-content: center;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: nowrap;
 }
+.EMPTY{
 
-.E:hover, .X:hover, .O:hover {
-}
-
-.E{
   color: rgba(0, 0, 0, 0);
 }
 
@@ -141,12 +132,13 @@ h3 {
 
 .cells {
   display: grid;
-  grid-template-columns: repeat(3, 90px);
+  grid-template-columns: repeat(3, 4vw);
+  /* grid-template-rows: repeat(3, 1fr); */
   align-items: center;
   justify-content: start;
   align-content: space-between;
   background-color: #9fd3c7;
-  border-radius: 5px;
+  border-radius: 9px;
 
 }
 
@@ -262,7 +254,6 @@ button {
   transition-timing-function: ease-in-out;
 }
 #darkModeButton:hover {
-
   font-size: 2.1em;
 }
 #dardModeCheckbox {
@@ -306,6 +297,7 @@ footer {
 
 .leaderboardTitle {
   background-color: #9fd3c7;
+  border: 2px solid #385170;
   color: #142d4c;
   width: 20%;
   text-align: center;
