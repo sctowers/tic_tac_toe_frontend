@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { Link, Outlet } from "react-router-dom";
 
 
 const StartGameForm = ({startGame}) => {
@@ -14,9 +13,7 @@ const StartGameForm = ({startGame}) => {
         console.log(stateId);
         startGame(stateDifficulty,stateId)
         console.log(startGame(stateDifficulty,stateId));
-        // setStateDifficulty(null);
-        // setStateId(null);
-        navigate("/game");
+        navigate("/gameboard");
         
     }
 
@@ -26,7 +23,7 @@ const StartGameForm = ({startGame}) => {
         setStateDifficulty(value);
     }
      //STATE Id handler
-     const handleIdChange = (event) => {
+    const handleIdChange = (event) => {
         let value = event.target.value
         setStateId(value);
     }
@@ -38,51 +35,49 @@ const StartGameForm = ({startGame}) => {
 
 
     return ( 
-       <>
-        <Outlet />
-
+    <div id="whole-form-div">
         {/* // Start Game Form */}
         <form id="game-form" onSubmit={handleFormSubmit}>
             <h3>Start New Game</h3>
 
             {/* Select Difficulty */}
-            <label htmlFor="difficulty">Difficulty: </label>
+            <label id="difficulty-label" htmlFor="difficulty">Difficulty: </label>
             <select 
                 id="difficulty" 
                 name="difficulty"
-                // defaultValue=".."
+                defaultValue="Pick-your-difficulty"
                 onChange={handleDifficultyChange}
                 value={stateDifficulty}
                 // onChange={handleChange}
             >
-                 <option value="">--</option>
+                <option disabled value="Pick-your-difficulty">--</option>
                 <option value="EASY">Easy</option>
                 <option value="HARD">Hard</option>
             </select>
 
               {/* Select Id (Avatar) */}
-              <label htmlFor="Id">Pick your player: </label>
+            <label id="player-label"htmlFor="Id">Pick your player: </label>
             <select 
-                id="Id" 
+                id="player" 
                 name="avatar"
-                // defaultValue="choose"
+                defaultValue="pick-player"
                 value={stateId}
                 onChange={handleIdChange}
                 // onChange={handleChange}
             >
-                <option value="">--</option>
+                <option disabled value="pick-player" >--</option>
                 <option value="1">Zsolt</option>
-                <option value="2">Naught Ninja</option>
-                <option value="3">Grid Gladiator</option>
-                <option value="4">Square Sensei</option>
-                <option value="5">Tic-Tac-Titan</option>
+                <option value="2">Saima</option>
+                <option value="3">Emmanuel</option>
+                <option value="4">Gisele</option>
+                <option value="5">Kacper</option>
 
             </select>
 
-            <input type="submit" value="Start Game"/>        
+            <input id ="submit-form"type="submit" value="Start Game"/>        
         </form>
-        </>
-     );
+        </div>
+    );
 }
- 
+
 export default StartGameForm;
