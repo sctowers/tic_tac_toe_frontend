@@ -99,23 +99,32 @@ h3 {
 }
 
 /* GameBoard Style */
-.EMPTY, .X, .O {
+.E, .X, .O {
+  scale: 1.0;
+  transition:0.35s;
+  animation-timing-function: ease-in-out;
   display: flex;
-    font-size: 2.5em;
-    border-style: solid;
-    border-radius: 5px;
-    background-color: #faf5e4;
-    border: 41px;
-    padding: 35px;
-    margin: 1.5px;
-  
-    align-content: center;
+  align-content: center;
+  align-items: center;
     flex-direction: row;
     justify-content: center;
     flex-wrap: nowrap;
+    contain: content;
+    font-size: 2.5em;
+    border-radius: 5px;
+    background-color: #faf5e4;
+    border: 41px;
+    /* padding: 35px; */
+    margin: 1.5px;
+    min-height: 80px;
+    min-width: 80px;
+    
 }
-.EMPTY{
 
+.E:hover, .X:hover, .O:hover {
+}
+
+.E{
   color: rgba(0, 0, 0, 0);
 }
 
@@ -126,13 +135,12 @@ h3 {
 
 .cells {
   display: grid;
-  grid-template-columns: repeat(3, 4vw);
-  /* grid-template-rows: repeat(3, 1fr); */
+  grid-template-columns: repeat(3, 90px);
   align-items: center;
   justify-content: start;
   align-content: space-between;
   background-color: #9fd3c7;
-  border-radius: 9px;
+  border-radius: 5px;
 
 }
 

@@ -34,7 +34,7 @@ const GameSound = (
       </button>
       <Sound
         url={Music}
-        playStatus={Sound.status.PLAYING}
+        // playStatus={Sound.status.PLAYING}
         playFromPosition={300}
         loop={true}
         volume={volume}
