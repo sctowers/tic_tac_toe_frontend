@@ -81,6 +81,3 @@ Our planning
 - [X] Add sound (app music + effects depending on game outcome win/lose)
 - [X] Light and dark mode functionality
 - [X] Add animation
-
-## 6. Pathways
-Home Page: http://localhost:3000
