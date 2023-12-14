@@ -85,7 +85,7 @@ const HomePage = () => {
 
   return (
     <div className={`container ${darkMode ? 'dark-mode' : 'light-mode'}`}>
-      <h1><span id="animate">TicTacToe🕹️</span></h1>
+      <h1><span id="animate">⭕ TicTacToe ❌</span></h1>
       <div id='headingBottomBorder'></div>
       <RouterProvider router={gameRoutes} />
       
@@ -102,6 +102,7 @@ const HomePage = () => {
                 </div>
                 <GameSound />
                 </footer>
+                <p className="copyright">&copy; 2023 by The Tic Tac Titans 🎮</p>
     </div>
     
   );
