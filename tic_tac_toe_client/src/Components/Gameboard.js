@@ -1,6 +1,9 @@
+import React from "react";
+import { useState } from "react";
 import Cell from "./Cell";
 import GameStatus from "./GameStatus";
-const Gameboard = ({ game, onCellClick }) => {
+
+const Gameboard = ({ game, onCellClick, onResetGame }) => {
 
     console.log(game.board);
 
@@ -13,7 +16,13 @@ const Gameboard = ({ game, onCellClick }) => {
     
     ))
 );
-console.log(mappedCells)
+console.log(mappedCells);
+
+const resetGame = (gameState) => {
+    // onResetGame();
+    const [game, setGame] = useState(true);
+    const [GameState, setGameState] = useState(false);
+}
 
 return (
     <>
@@ -22,6 +31,8 @@ return (
     </div>
     <GameStatus game={game} />
     
+    <button onClick={resetGame}>Reset Game 🔄</button>
+
     </>
 );
 
