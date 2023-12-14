@@ -14,13 +14,10 @@
    - 3.2. Client Side Setup
 4. Component & Wireframe Diagrams
    - 4.1. Initial Diagrams
-   - 3.2. Final Diagrams
+   - 4.2. Final Diagrams
 5. Game Functionality
    - 5.1. MVPs
    - 5.2. Extensions
-
-  
-
 
 ## 1. Introduction
 Welcome to our exciting world of Tic-Tac-Toe! 🎉 In collaboration with the Superstars team, we've crafted a fantastic frontend web application that brings the classic game to life. Get ready to experience the thrill of strategic moves and friendly competition!
@@ -53,7 +50,7 @@ Welcome to our exciting world of Tic-Tac-Toe! 🎉 In collaboration with the Sup
 5. Start running the app with `npm start` in the terminal
 
 ## 4. Component & Wireframe Diagrams 🎨
-Our planning 
+Our following diagrams illustrate the changes we made over the course of receiving feedback from the trainers, and developing the frontend.
 
 ## 4.1 Initial Diagrams
 
