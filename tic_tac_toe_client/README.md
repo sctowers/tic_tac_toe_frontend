@@ -1,12 +1,26 @@
 # **Group 4: Front for a Tic-Tac-Toe Game** 🎮
 
-## Developer Team ##
+## 👥🎸 The Tic Tac Titans Developer Team 👥🎸 ##
 - GitHub: [Emily](https://github.com/remily23) 
 - GitHub: [Sarah](https://github.com/SarahOgunko) 
 - GitHub: [Suzi](https://github.com/sctowers) 
 - GitHub: [Tom](https://github.com/mclaughlin111) 💿
 
 ## Table of Contents 📜
+1. Introduction
+2. Technologies & Libraries
+3. Setup Instructions
+   - 3.1. Server Side Setup
+   - 3.2. Client Side Setup
+4. Component & Wireframe Diagrams
+   - 4.1. Initial Diagrams
+   - 3.2. Final Diagrams
+5. Game Functionality
+   - 5.1. MVPs
+   - 5.2. Extensions
+
+  
+
 
 ## 1. Introduction
 Welcome to our exciting world of Tic-Tac-Toe! 🎉 In collaboration with the Superstars team, we've crafted a fantastic frontend web application that brings the classic game to life. Get ready to experience the thrill of strategic moves and friendly competition!
@@ -17,7 +31,9 @@ Welcome to our exciting world of Tic-Tac-Toe! 🎉 In collaboration with the Sup
 - HTML
 - CSS
 - React
-  - Router Dom
+  - [Router Dom 6.21.0](https://www.npmjs.com/package/react-router-dom)
+  - [Sound 1.2.0](https://www.npmjs.com/package/react-sound)
+  - [Confetti 6.1.0](https://www.npmjs.com/package/react-confetti)
 - Visual Studio Code
 - GitHub
 
@@ -37,25 +53,31 @@ Welcome to our exciting world of Tic-Tac-Toe! 🎉 In collaboration with the Sup
 5. Start running the app with `npm start` in the terminal
 
 ## 4. Component & Wireframe Diagrams 🎨
-TBA
+Our planning 
+
+## 4.1 Initial Diagrams
+
+**Component Diagram:**
+
+**Wireframe Diagram:**
+
+## 4.2 Final Diagrams:
+
+**Component Diagram:**
+
+**Wireframe Diagram:**
 
 ## 5. Game Functionality 🕹️
 
 ## 5.1. MVP 
--  [] When player clicks on cell, the game state updates
--  [] Win/lose status check after each move
+-  [X] When player clicks on cell, the game state updates
+-  [X] Win/lose status check after each move
+- [X] Update player stats on leaderboard
 
 ## 5.2. Extensions
-- [] Update play stats on leaderboard and player info pages
-- [] Add sound (app music + effects depending on game outcome win/lose)
-- [] Light and dark mode functionality
-- [] Add animation
-- [] Winning streaks to display on player profiles
-- [] Counter increment function of how many games played in total by every player combined
-- [] Make home page rival LingsCar UX
-- [] Add loading progress (Circular, Linear progress React components - Material UI )
-- [] Add ability to change counter symbols (sun & moon, carrot & rabbit)
-- [] A a comments form
+- [X] Add sound (app music + effects depending on game outcome win/lose)
+- [X] Light and dark mode functionality
+- [X] Add animation
 
 ## 6. Pathways
 Home Page: http://localhost:3000
