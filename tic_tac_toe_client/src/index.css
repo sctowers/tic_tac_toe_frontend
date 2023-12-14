@@ -38,8 +38,8 @@ body {
   justify-content: center;
   align-items: center;
   text-wrap: nowrap;
-  margin-right: 10vw;
-  margin-left: 10vw;
+  margin-right: 1vw;
+  margin-left: 1vw;
   min-width: fit-content;
   padding: 1em;
   font-weight: bolder;
@@ -80,6 +80,8 @@ h1 {
   transition: background-size 250ms;
   transition-timing-function: ease-in-out;
   font-size: 100px;
+  margin-bottom: 1vh;
+  margin-top: 2vh;
   
 }
 h3 {
@@ -126,6 +128,7 @@ h3 {
     margin: 8px;
     min-height: 240px;
     min-width: 200px;
+   
     
 }
 
@@ -146,6 +149,10 @@ h3 {
 .cellWrapper {
   display: flex;
   justify-content: center;
+  backdrop-filter: blur(1.5px);
+  border-radius: 10px;
+
+
 }
 
 .cells {
@@ -156,6 +163,7 @@ h3 {
   align-content: space-between;
   background-color: #9fd3c7;
   border-radius: 5px;
+
 
 }
 
