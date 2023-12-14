@@ -61,7 +61,7 @@ Our following diagrams illustrate the changes we made over the course of receivi
 
 **Wireframe Diagram:**
 
-![initial wireframe diagram]()
+![initial wireframe diagram](https://github.com/sctowers/tic_tac_toe_frontend/blob/ReadMe/tic_tac_toe_client/Initial%20Wireframe%20Diagram.png?raw=true)
 
 ## 4.2 Final Diagrams:
 
