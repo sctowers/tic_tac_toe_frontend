@@ -1,8 +1,9 @@
 import Confetti from 'react-confetti';
+import { useWindowSize } from 'react-use';
 import { useState, useEffect } from 'react';
 const GameStatus = ({game}) => {
     const [confetti, setConfetti] = useState(false);
-
+    const{width , height}= useWindowSize();
     useEffect(() => {
       
         if (game.result === "WIN") {
@@ -15,7 +16,7 @@ const GameStatus = ({game}) => {
     return ( 
         <div>
         <p id="gameResult">Game Result: {game.result}</p>
-        {confetti && <Confetti /> }
+        {confetti && <Confetti width={width} height={height} /> }
         </div>
      );
 }
