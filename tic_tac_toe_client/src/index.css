@@ -280,7 +280,7 @@ button {
 
 footer {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center; 
 }
 
 /* leaderboard */
