@@ -2,8 +2,8 @@
 
 ## 👥🎸 The Tic Tac Titans Developer Team 👥🎸 ##
 - GitHub: [Emily](https://github.com/remily23) 🐼
-- GitHub: [Sarah](https://github.com/SarahOgunko) 
-- GitHub: [Suzi](https://github.com/sctowers) 
+- GitHub: [Sarah](https://github.com/SarahOgunko) 🌞
+- GitHub: [Suzi](https://github.com/sctowers) 🦑
 - GitHub: [Tom](https://github.com/mclaughlin111) 💿
 
 ## Table of Contents 📜
@@ -48,6 +48,8 @@ Welcome to our exciting world of Tic-Tac-Toe! 🎉 In collaboration with the Sup
 3. Enter `npi i` in the terminal to install the node modules
 4. Enter `npm install react-router-dom` in the terminal to install the React Router
 5. Start running the app with `npm start` in the terminal
+
+Note, some users may need to enter `npm i —force` to resolve any issues surrounding installing Sound and Confetti.
 
 ## 4. Component & Wireframe Diagrams 🎨
 Our following diagrams illustrate the changes we made over the course of receiving feedback from the trainers, and developing the frontend.
