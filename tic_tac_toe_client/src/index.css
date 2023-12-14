@@ -127,12 +127,18 @@ h3 {
     
 }
 
-.E:hover, .X:hover, .O:hover {
-}
+/* .E:hover, .X:hover, .O:hover {
+} */
 
 .E{
   color: rgba(0, 0, 0, 0);
 }
+
+.A{
+  background-image: url("./Assets/face.png");
+  background-size: contain;
+}
+
 
 .cellWrapper {
   display: flex;
@@ -262,8 +268,8 @@ button {
   transition-timing-function: ease-in-out;
 }
 #darkModeButton:hover {
+  cursor: pointer;
 
-  font-size: 2.1em;
 }
 #dardModeCheckbox {
   display: none;
