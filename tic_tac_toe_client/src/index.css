@@ -33,13 +33,13 @@ body {
   justify-content: center;
 }
 
-#linkToForm {
+#linkToForm, #linkToLeaderboard {
   display: flex;
   justify-content: center;
   align-items: center;
   text-wrap: nowrap;
-  /* margin-right: 40vw;
-  margin-left: 40vw; */
+  margin-right: 10vw;
+  margin-left: 10vw;
   min-width: fit-content;
   padding: 1em;
   font-weight: bolder;
@@ -54,13 +54,19 @@ body {
 }
 #linkToForm:hover {
   scale: 1.03;
- 
+}
+
+#linkToLeaderboard:hover {
+  scale: 1.03;
 }
 
 #linkToForm:visited {
 color : #101821 ;
 }
 
+#linkToLeaderboard:visited {
+  color : #101821 ;
+  }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
@@ -195,7 +201,6 @@ h3 {
   background-color: #faf5e4;
   border-radius: 15px;
   margin-bottom: 20px;
- 
 }
 
 #whole-form-div{
@@ -270,5 +275,33 @@ footer {
   justify-content: flex-start;
 }
 
+/* leaderboard */
+.leaderboardTable {
+  background-color: #9fd3c7;
+  color: #142d4c;
+  border: none;
+  padding: 4px 8px;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 4px;
+  width: 50%;
+  font-size: 16px;
+  margin: 15px auto;
+  border-collapse: collapse;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 
+.leaderboardTable th, .leaderboardTable td {
+  border: 1px solid #142d4c; 
+  padding: 8px; 
+}
 
+.leaderboardTitle {
+  background-color: #9fd3c7;
+  color: #142d4c;
+  width: 20%;
+  text-align: center;
+  border-radius: 4px;
+  margin: auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
