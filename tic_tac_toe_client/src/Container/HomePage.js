@@ -5,13 +5,10 @@ import StartGameForm from "../Components/StartGameForm";
 import Navigation from "../Components/Navigation";
 import GameSound from "../Components/GameSound";
 import Leaderboard from "../Components/Leaderboard";
-import Footer from "../Components/Footer";
 
 const HomePage = () => {
   const [game, setGame] = useState({ board: [] });
   const [darkMode, setDarkMode] = useState(false);
-  const [leaderboard, setLeaderboard] = useState([]);
-  const [showLeaderboard, setShowLeaderboard] = useState(false)
 
   const startGame = async (difficulty, playerId) => {
     const response = await fetch("http://localhost:8080/games", {
@@ -26,17 +23,7 @@ const HomePage = () => {
     const gameWithBoard = await gameStateResponse.json();
 
     setGame(gameWithBoard);
-
-    const leaderboardResponse = await fetch('http://localhost:8080/players/leaderboard')
-    const leaderboardData = await leaderboardResponse.json();
-    setLeaderboard(leaderboardData.players);
   };
-
-  const updateLeaderboard = async () => {
-    const leaderboardResponse = await fetch('http://localhost:8080/players/leaderboard')
-    const leaderboardData = await leaderboardResponse.json();
-    setLeaderboard(leaderboardData.players);
-  }
 
   const onCellClick = async (rowIndex, colIndex, cell) => {
     if (cell === "EMPTY") {
@@ -69,9 +56,8 @@ const HomePage = () => {
       path: "/",
       element: (
           <>
-                <Navigation />
-                
-                </>
+          <Navigation />
+          </>
       ),
       children: [
         {
@@ -82,6 +68,10 @@ const HomePage = () => {
           path: "/gameboard",
           element: <Gameboard onCellClick={onCellClick} game={game} />,
         },
+        {
+          path: "/players/leaderboard",
+          element: <Leaderboard />
+        },
       ],
     },
   ])
@@ -91,28 +81,14 @@ const HomePage = () => {
     setDarkMode(!darkMode)
     let face = document.getElementById("darkModeButton")
     face.innerText === '🌝' ?  face.innerText = '🌚' : face.innerText = '🌝'
-
-  }
-
-  // function to show/hide leaderboard
-  const toggleLeaderboard = () => {
-    setShowLeaderboard(!showLeaderboard)
   }
 
   return (
     <div className={`container ${darkMode ? 'dark-mode' : 'light-mode'}`}>
-        {/* <h3>welcome to:</h3> */}
       <h1><span id="animate">TicTacToe🕹️</span></h1>
       <div id='headingBottomBorder'></div>
       <RouterProvider router={gameRoutes} />
-     
       
-     
-      <button onClick={toggleLeaderboard}>
-        {showLeaderboard ? 'Hide Leaderboard' : 'Show Leaderboard'}
-      </button>
-      <button onClick={updateLeaderboard}>Update Leaderboard</button>
-      {showLeaderboard && <Leaderboard players={leaderboard}/>}
       <footer> 
         <div className='dark-mode-toggle'>
                     <label>
