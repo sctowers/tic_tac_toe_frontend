@@ -2,18 +2,21 @@ import Cell from "./Cell";
 import GameStatus from "./GameStatus";
 const Gameboard = ({ game, onCellClick }) => {
 
-    console.log(game.board);
+    // Emmanuel Face
+    // let playerName = game.player.playerName;
+    // console.log(playerName)
 
     let mappedCells = game.board.flatMap((row, rowIndex) => row.map((cell, colIndex) => (
     <Cell
         key={rowIndex * game.board.length + colIndex}
         value={cell}
         onClick={() => onCellClick(rowIndex, colIndex, cell)}
+        // player={playerName}
+
     />
     
     ))
 );
-console.log(mappedCells)
 
 return (
     <>

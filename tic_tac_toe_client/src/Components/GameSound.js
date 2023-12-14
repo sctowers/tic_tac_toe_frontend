@@ -2,43 +2,38 @@ import React, { useState } from "react";
 import Sound from "react-sound";
 import Music from "../Assets/music.mp3";
 
-// Function Example from:https://dev.to/daveguz97/adding-sound-to-a-react-project-51m3 //
-const GameSound = (
-  handleSongLoading,
-  handleSongPlaying,
-  handleSongFinishedPlaying
-) => {
-  // const[volume, setVolume] = useState(0);
-  // const[position, setPosition] = useState(1000);
-  let volume = 50;
+const GameSound = () => {
+  const [volume, setVolume] = useState(0);
+  const [playState, setPlayState] = useState(Sound.status.STOPPED)
 
-  function mute() {
-    if (volume === 0) {
-      volume = 50;
-    } else {
-      volume = 0;
-    }
+  // const muteButton = document.querySelector("muteButton")
+  // muteButton.addEventListener('click', () => {
+  //   const playback = ();
+  // })
 
-    let button = document.getElementById("muteButton");
-    button.innerText === "🔇"
-      ? (button.innerText = "🔈")
-      : (button.innerText = "🔇");
-  }
+  const mute = () => {
+    setVolume(prevVolume => (prevVolume === 0 ? 50 : 0));
+    setPlayState(Sound.status.PAUSED) || setPlayState(Sound.status.STOPPED) ? setPlayState(Sound.status.PAUSED) : setPlayState(Sound.status.PLAYING);
+  };
+
+  
 
   return (
     <div>
-      {/* <button onClick={() => setIsPlaying(!isPlaying)}>{!isPlaying ? 'Play' : 'Stop'}   {/* //think like IF ElSE Tom */}
-      {/* </button> */}
       <button id="muteButton" onClick={mute}>
-        🔇
+        {(volume === 0) ? '🔇' : '🔈'}
       </button>
+
+      
       <Sound
         url={Music}
-        // playStatus={Sound.status.PLAYING}
-        playFromPosition={300}
+        playStatus={playState}
+        playFromPosition={0}
         loop={true}
         volume={volume}
       />
+
+
     </div>
   );
 };
