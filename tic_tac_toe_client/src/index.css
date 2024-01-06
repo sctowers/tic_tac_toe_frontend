@@ -140,9 +140,11 @@ h3 {
   transition: 0.0s;
 }
 
-.A{
-  background-image: url("./Assets/face.png");
+.X{
+  /* background-image: url("./Assets/face.png"); */
   background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 
